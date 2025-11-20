@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2526</title>
-
-	<link href="styles/style.css" rel="stylesheet">
-
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEBO</title>
 </head>
 
 <body>
-	<h1>Howdy FED2526</h1>
 
-	<script defer src="scripts/script.js"></script>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">FEBO</h1>
+
+            <button id="hamburger-menu" class="hamburger">☰</button>
+
+            <ul class="nav-list">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Acties</a></li>
+                <li><a href="#">Vestigingen</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <img src="#" alt="Hero Afbeelding">
+        <button class="cta-button">bezorgen</button>
+        <button class="cta-button">afhalen</button>
+    </section>
+
+
+    <section class="zoekbalk">
+        <label class="zoek-label">Vul hier je postcode in</label>
+        <input type="text" class="zoek-input" placeholder="1234AB">
+        <button class="zoek-button">Zoek</button>
+    </section>
+
+
+    <section class="werken-bij">
+      <img class="werken-bij-foto" src="werken-bij.jpg" alt="Werken bij FEBO">
+      <h2>Werken bij FEBO</h2>
+      <p>Kom werken bij de leukste snackbar van Nederland!</p>
+      <button class="werken-knop">Meer informatie</button>
+    </section>
+
+    <section>
+      <img class="zelf-ondernemen" src="werken-bij.jpg" alt="Zelf ondernemen">
+      <h2>Zelf ondernemen?</h2>
+      <p>Ben jij ondernemend en zoek je houvast, structuur, extra merkkracht en ondersteuning? 
+        Start vandaag jouw FEBO avontuur. FEBO bestaat al meer dan 80 jaar 
+        en heeft zich keer op keer bewezen als succesvolle formule.</p>
+      <button class="zelf-ondernemen">Meer informatie</button>
+    </section>
+
+
+
+    <section class="ons-assortiment">
+      <h2>Ons assortiment</h2>
+      <p>
+          Dagelijks worden onze kroketten en burgers nog altijd volgens het authentieke recept dagvers bereid.  
+          Continu zorgen wij ervoor dat de producten dezelfde kwaliteit hebben als vroeger.
+      </p>
+      <ul class="assortiment-lijst">
+          <li>
+              <img src="kroket.jpg" alt="Kroketten">
+              <h3>Kroketten</h3>
+              <p>Krokant banket van romige ragout, dagvers bereid.</p>
+              <a href="#">Product informatie</a>
+          </li>
+          <li>
+              <img src="milkshake.jpg" alt="Milkshake">
+              <h3>Milkshake</h3>
+              <p>Romige shake van echte melk.</p>
+              <a href="#">Product informatie</a>
+          </li>
+      </ul>
+  </section>
+
+
+  <section class="nieuws-febo">
+    <h2>FEBO Interessant</h2>
+    <ul class="nieuws-lijst">
+        <li>
+            <img src="amstelveen-open.jpg" alt="FEBO Amstelveen heropening">
+            <time datetime="2025-06-24">24 juni 2025</time>
+            <h3>FEBO Amstelveen is weer open</h3>
+            <p>Na een verbouwing sinds 21 maart is onze vernieuwde vestiging in Amstelveen klaar om jullie weer te ontvangen.</p>
+            <a href="#">Lees meer</a>
+        </li>
+        <li>
+            <img src="rabobank-samenwerking.jpg" alt="FEBO Rabobank samenwerking">
+            <time datetime="2025-06-17">17 juni 2025</time>
+            <h3>FEBO kiest Rabobank als nieuwe huisbank</h3>
+            <p>Een match made in Amsterdam: FEBO kiest Rabobank als haar nieuwe financiële partner.</p>
+            <a href="#">Lees meer</a>
+        </li>
+        <li>
+            <img src="tommy-tomato.jpg" alt="FEBO TommyTomato">
+            <time datetime="2024-11-19">19 november 2024</time>
+            <h3>FEBO x TommyTomato</h3>
+            <p>Samen met TommyTomato lanceert FEBO groentelunches op scholen om jongeren makkelijker toegang te geven tot gezonde keuzes.</p>
+            <a href="#">Lees meer</a>
+        </li>
+    </ul>
+</section>
+
+
+
+  
+
+    <footer class="footer">
+        <section>
+            <h2>Contact</h2>
+            <ul>
+                <li>info@febo.nl</li>
+                <li>0800-FEBO</li>
+                <li>Klantenservice</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Volg ons</h2>
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>TikTok</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Over FEBO</h2>
+            <ul>
+                <li>Over ons</li>
+                <li>Vacatures</li>
+                <li>Geschiedenis</li>
+            </ul>
+            <button class="besteldirect">Bestel direct</button>
+        </section>
+    </footer>
+
 </body>
-	
 </html>
