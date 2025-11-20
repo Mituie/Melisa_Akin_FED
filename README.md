@@ -37,15 +37,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-https://www.febo.nl
+https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k_mrIOfpKEFlj2TR8gPbd2&gclid=CjwKCAiA2svIBhB-EiwARWDPjnPPd-okMtjgd3mSD8rPy_UaQmD0beCXcbxWq8gphxKMy-zEfMkbghoC5pgQAvD_BwE
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage 
-  <img src="readme-images/screenshot_voorpagina_telefoon" width="375px" alt="screenshot voorpagina febo telefoon">
+  <img src="readme-images/febo.JPG" width="375px" alt="screenshot voorpagina febo telefoon">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   merch pagina  
-  <img src="readme-images/screenshot_febo_merch_telefoon" width="375px" alt="screenshot febo merch telefoon">
+  <img src="readme-images/history.JPG" width="375px" alt="screenshot febo history pagina">
  
 </details>
 
@@ -55,7 +55,7 @@ https://www.febo.nl
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-
+Bij het bekijken van de website zag ik paar fouten bijvoorbeeld sommige afbeeldingen missen een alt-tekst, waardoor mensen die een schermlezer gebruiken geen idee hebben wat er op die beelden staat. Verder valt op dat veel teksten een te laag kleurcontrast hebben. Dat zorgt ervoor dat ze, vooral voor slechtzienden of in fel licht, lastig te lezen zijn. Er zijn ook wat overbodige alt-teksten. waar de beschrijving eigenlijk niets toevoegt.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
@@ -69,7 +69,7 @@ https://www.febo.nl
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
