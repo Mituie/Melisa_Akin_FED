@@ -37,7 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-https://www.febo.nl
+https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k_mrIOfpKEFlj2TR8gPbd2&gclid=CjwKCAiA2svIBhB-EiwARWDPjnPPd-okMtjgd3mSD8rPy_UaQmD0beCXcbxWq8gphxKMy-zEfMkbghoC5pgQAvD_BwE
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage 
@@ -70,6 +70,9 @@ Bij het bekijken van de website zag ik paar fouten bijvoorbeeld sommige afbeeldi
 
   ### de hele pagina: 
   <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
+
+  ### de hele pagina: 
+  <img src="readme-images/breakdown historie.jpg" width="375px" alt="breakdown van de hele pagina historie"> 
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
