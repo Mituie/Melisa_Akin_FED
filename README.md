@@ -70,7 +70,7 @@ Bij het bekijken van de website zag ik paar fouten bijvoorbeeld sommige afbeeldi
 
   ### de hele pagina: 
   <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
-  <img src="readme-images/breakdown historie.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownhistorie.jpg" width="375px" alt="breakdown van de hele pagina">
 
 
   ### dynamisch deel (bijv menu): 
