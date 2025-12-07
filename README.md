@@ -41,11 +41,11 @@ https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage 
-  <img src="readme-images/febo_voorpagina.jpg" width="375px" alt="screenshot voorpagina febo telefoon">
+  <img src="readme-images/febo.JPG" width="375px" alt="screenshot voorpagina febo telefoon">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   merch pagina  
-  <img src="readme-images/history.JPG" width="375px" alt="screenshot febo history pagina">
+  <img src="readme-images/onze_geschiedenis.jpeg" width="375px" alt="screenshot febo history pagina">
  
 </details>
 
@@ -55,13 +55,7 @@ https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-Bij het bekijken van de website viel me op dat er een aantal toegankelijkheidsproblemen waren. Zo misde bij meerdere afbeeldingen alt-teksten, waardoor gebruikers met een schermlezer niet kunnen begrijpen wat er op de beelden wordt laten zien. Ook heeft een groot deel van de tekst een te laag kleurcontrast. Dit maakt de tekst moeilijkerleesbaar, vooral voor slechtzienden of wanneer iemand de website in fel licht bekijkt.
-
-Verder zijn er ook enkele overbodige alt-teksten aanwezig, waar de beschrijving weinig toevoegt of te vaag is om echt nuttig te zijn. Het is belangrijk dat alt-teksten relevant en informatief zijn, zodat gebruikers een gelijkwaardige ervaring krijgen.
-
-Ook zou het helpen om interactie-elementen, zoals knoppen en links, duidelijker te labelen. Op sommige plekken is niet meteen duidelijk wat een element doet of waar het naartoe leidt, wat verwarrend kan zijn voor zowel schermlezergebruikers als mensen die eenvoudiger navigatie nodig hebben.
-
-Tot slot kunnen sommige onderdelen gebaat zijn bij een duidelijkere structuur, zoals consistente kopteksten en voldoende ruimte tussen elementen, om de leesbaarheid en navigatie verder te verbeteren.
+Bij het bekijken van de website zag ik paar fouten bijvoorbeeld sommige afbeeldingen missen een alt-tekst, waardoor mensen die een schermlezer gebruiken geen idee hebben wat er op die beelden staat. Verder valt op dat veel teksten een te laag kleurcontrast hebben. Dat zorgt ervoor dat ze, vooral voor slechtzienden of in fel licht, lastig te lezen zijn. Er zijn ook wat overbodige alt-teksten. waar de beschrijving eigenlijk niets toevoegt.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
