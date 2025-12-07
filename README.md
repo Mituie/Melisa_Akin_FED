@@ -41,11 +41,11 @@ https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage 
-  <img src="readme-images/febo.JPG" width="375px" alt="screenshot voorpagina febo telefoon">
+  <img src="readme-images/screenshot_voorpagina_telefoon.PNG" width="375px" alt="screenshot voorpagina febo telefoon">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   merch pagina  
-  <img src="readme-images/onze_geschiedenis.jpeg" width="375px" alt="screenshot febo history pagina">
+  <img src="readme-images/over_ons_pagina.PNG" width="375px" alt="screenshot febo history pagina">
  
 </details>
 
