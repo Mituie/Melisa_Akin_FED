@@ -93,7 +93,7 @@ Bij het bekijken van de website zag ik paar fouten bijvoorbeeld sommige afbeeldi
   ### Stand van zaken
 Deze week ben ik begonnen met het maken van mijn index.html-pagina. Waar ik meteen tegenaan liep, was het semantisch correct opbouwen van de website. Ik kreeg al snel de feedback dat de code altijd moet beginnen met een h1, in plaats van een h2 of h3, omdat het anders semantisch incorrect is. Ook als ik eigenlijk geen h1 nodig heb, moet ik die nog steeds plaatsen en kan ik hem eventueel via CSS verbergen.
 
-Daarnaast maakte ik vooral de fout dat ik de structuur van de FEBO-pagina te letterlijk overnam. Op de FEBO-site zie je namelijk eerst een afbeelding en daaronder een koptekst. Daardoor dacht ik dat dit in de HTML ook zo moest: eerst een <img> en daarna een <h2>. Maar semantisch gezien moet het juist andersom: eerst de koptekst plaatsen en daarna de afbeelding.
+Daarnaast maakte ik vooral de fout dat ik de structuur van de FEBO-pagina te letterlijk overnam. Op de FEBO-site zie je namelijk eerst een afbeelding en daaronder een koptekst. Daardoor dacht ik dat dit in de HTML ook zo moest: eerst een <img> en daarna een h2. Maar semantisch gezien moet het juist andersom: eerst de koptekst plaatsen en daarna de afbeelding.
 
 Na mijn breakdownschets kreeg ik ook de feedback dat ik bij datums beter het element <date> kan gebruiken. Daarnaast werd mij aangeraden om langere tekstgedeeltes in een <article> te plaatsen, omdat dat semantisch beter past.
 
