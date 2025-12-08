@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEBO – Historie</title>
+    <title>FEBO</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/febo_rood.png">
+
 </head>
 
 <body>
+    
+    <div id="loader">
+        <img src="images/grillburger.png" alt="Laad icoon" class="loader-burger">
+      </div>
 
 <header>
-    <h1>FEBO</h1>
-    <button id="hamburger-menu">☰</button>
+    <button id="hamburger-menu">
+        <img src="images/hamburger.png" alt="Open het navigatiemenu van de website">
+    </button>
+
+    <h1>
+        <a href="index.html">
+            <img src="images/febologo.png" alt="FEBO wit logo">
+        </a>
+    </h1>
+
+    <span style="width:35px;"></span>
+
     <nav>
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Acties</a></li>
-            <li><a href="#">Vestigingen</a></li>
+        <ul id="nav-list">
+            <li><a href="#">FEBOLINES</a></li>
+            <li><a href="#">Werken bij</a></li>
+            <li><a href="#">Franchisenemer worden</a></li>
+            <li><a href="historie.html">Ons verhaal</a></li>
+            <li><a href="#">FEBO Merch</a></li>
+            <li><a href="#">Vind een FEBO</a></li>
+            <li><a href="#">Ons assortiment</a></li>
+            <li><a href="#">FAQ</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -24,34 +45,34 @@
 
 <main>
 
-<section>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_10_geschiedenis-1500x454.jpg" alt="Geschiedenis fotos vroeger voor de febo">
-    <p> FEBO, opgerciht in 1941 onder de naam bakkerije FEBO en later ...</p>
+<section class="febo-vroeger">
+    <img src="images/historie_vrouwen_febo.jpg" alt="Vier vrouwen lachend voor een historische FEBO-winkel">
+    <div class="centered">Geschiedenis Onze Historie</div>
 </section>
 
 <article>
 
     <h2>1936</h2>
     <p>De geschiedenis begint in 1936. Johan de Borst startte als banketbakker in de Ferdinand Bolstraat in Amsterdam.</p>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_2_fotos-historie-febo.png" alt="Geschiedenis fotos vroeger van de febo">
+    <img src="images/historie_febo.png" alt="Polaroidfoto van Johan de Borst poseerend voor de camera">
 
     <h2>1941</h2>
     <p>In 1941 opent De Borst officieel zijn banketbakkerij ‘Maison FEBO’. Het succes groeit snel.</p>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_3_gebak-historie-febo.png" alt="FEBO gebak">
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_11_Johan-Cruijf-1500x553.jpg" alt="johan cruijf">
+    <img src="images/gebak.png" alt="Drie gebakjes naast elkaar op een schaal">
+    <img src="images/johan_cruif.jpg" alt="Johan Cruijff poseert voor de camera bij FEBO Stadionplein, met tekst 'Je gaat het pas zien als je het door hebt'">
 
     <h2>1960–1975</h2>
     <p>Rond 1960 komen de eerste wandautomaten in beeld. Deze zelfbediening maakt FEBO razend populair,
         vooral onder Amsterdammers die snel en warm een snack wilden trekken.</p>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_4_img-60-75.jpg" alt="Oude FEBO automatiek">
+    <img src="images/wandautomaten.jpg" alt="Oude FEBO-wandautomaten in een historische winkel">
 
     <h2>1976</h2>
     <p>FEBO introduceert de grillburger, een van de meest iconische producten in het assortiment.</p>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_5_burger-oud-new.png" alt="FEBO grillburger">
+    <img src="images/grillburger.png" alt="FEBO grillburger op een bord">
 
     <h2>1993</h2>
     <p>In 1993 wordt FEBO verder geprofessionaliseerd en groeit de formule uit tot een franchiseorganisatie.</p>
-    <img src="images/Febo assets voor Mel/historie fotos/imgi_6_img-93.jpg" alt="FEBO klant patat eten">
+    <img src="images/klant_patat.jpg" alt="Klanten eten patat bij een FEBO-winkel">
 
     <h2>Van 1941 tot nu</h2>
     <p>Al meer dan 80 jaar maakt FEBO elke dag verse kroketten, burgers en snacks.
@@ -61,52 +82,59 @@
 
 <div>
     <h2>FEBO – Grootse Innovatie</h2>
-    <iframe width="560" height="315"
-            src="https://www.youtube.com/watch?v=maL-EJG-tbw"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen>
-    </iframe>
+    <div id="player"></div>
+    <button id="toggle-sound">Geluid aan/uit</button>
 </div>
 
-<div>
+<div class="heden">
     <h2>Heden</h2>
     <p>Vandaag de dag is FEBO een sterke landelijke formule met tientallen vestigingen,
         nog altijd trouw aan het dagverse concept van Johan de Borst.</p>
-    <img src="heden-winkel.jpg" alt="Moderne FEBO winkel">
+    <img src="images/febo_binnen.jpg" alt="Moderne FEBO-winkel van binnen met klanten en snacks">
 </div>
 
 </main>
 
 <footer>
-    <section>
-        <h2>Contact</h2>
-        <ul>
-            <li>info@febo.nl</li>
-            <li>0800-FEBO</li>
-            <li>Klantenservice</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>Volg ons</h2>
-        <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TikTok</li>
-        </ul>
-    </section>
+    <h2>Contact</h2>
+    <ul>
+        <li>Processorsstraat 21</li>
+        <li>1033 NZ Amsterdam</li>
+        <li>020-6328555</li>
+        <li><a href="mailto:info@febo.nl">info@febo.nl</a></li>
+    </ul>
 
-    <section>
-        <h2>Over FEBO</h2>
-        <ul>
-            <li>Over ons</li>
-            <li>Vacatures</li>
-            <li>Geschiedenis</li>
-        </ul>
-        <a href="#" class="besteldirect">Bestel direct</a>
-    </section>
+    <h2>Contact FEBO Merch</h2>
+    <ul>
+        <li><a href="mailto:shop@febo.nl">shop@febo.nl</a></li>
+        <li>Retourneren</li>
+    </ul>
+
+    <h2>Pagina's</h2>
+    <ul>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Interessant</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Ons verhaal</a></li>
+        <li><a href="#">Mijn FEBO</a></li>
+    </ul>
+
+    <h2>Social media</h2>
+    <ul>
+        <li><a href="#"><img src="/images/facebook.png" alt="Facebook logo"></a></li>
+        <li><a href="#"><img src="/images/x.png" alt="X Twitter logo"></a></li>
+        <li><a href="#"><img src="/images/instagram.png" alt="Instagram logo"></a></li>
+        <li><a href="#"><img src="/images/linkedin.png" alt="LinkedIn logo"></a></li>
+        <li><a href="#"><img src="/images/youtube.png" alt="YouTube logo"></a></li>
+        <li><a href="#"><img src="/images/tiktok.png" alt="TikTok logo"></a></li>
+    </ul>
+
+    <p>Copyright © 2025 FEBO</p>
+    <p>Disclaimer</p>
+
 </footer>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>
