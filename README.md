@@ -37,7 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-https://www.febo.nl/?gad_source=1&gad_campaignid=9650584077&gbraid=0AAAAADKbrH_k_mrIOfpKEFlj2TR8gPbd2&gclid=CjwKCAiA2svIBhB-EiwARWDPjnPPd-okMtjgd3mSD8rPy_UaQmD0beCXcbxWq8gphxKMy-zEfMkbghoC5pgQAvD_BwE
+https://www.febo.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   homepage 
