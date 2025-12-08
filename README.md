@@ -191,7 +191,7 @@ Een uitdaging was dat alles nog op de juiste plek bleef en ook dat alles bleef w
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Bij deze feedbackronde kreeg ik als feedback dat ik beter niet !important kan gebruiken in mijn code, omdat dit aangeeft dat een bepaalde regel altijd voorrang krijgt, terwijl dat vaak niet nodig is en de CSS moeilijker maakt om aan te passen. Daarnaast kreeg ik de tip dat ik meer in mijn README kon werken, zodat duidelijker wordt uitgelegd wat mijn website doet en hoe alles in elkaar zit. Ook werd mij aangeraden om meer bezig te zijn met mijn CSS, zodat de styling van de website nog beter en consistenter wordt.
 
 
   ### Agenda voor meeting
