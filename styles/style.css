@@ -1,103 +1,177 @@
 /**************/
-
 /* CSS REMEDY */
-
 /**************/
-
 *, *::after, *::before {
+    box-sizing: border-box;
+}
 
-    box-sizing:border-box;  
-  
-  }
-   
-   
-   
-   
-  /*********************/
-  
-  /* CUSTOM PROPERTIES */
-  
-  /*********************/
-  
-  :root {
-  
-      /* startje */
-  
-      --color-text:#111;
-  
-      --color-background:#eee;
-  
-  }
-   
-   
-   
-  /****************/
-  
-  /* JOUW STYLING */
-  
-  /****************/
-   
-  /* jouw code */
-   
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    --color-text: #111;
+    --color-text2: #eee;  
+    --color-background2: #111;
+    --color-background: #eee;
+    --primary-color: #d83333;
+    --accent-color: #008f39;
+}
 
+/****************/
+/* JOUW STYLING */
+/****************/
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #333; 
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
+#loader {
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader-burger {
+    width: 90px;
+    height: auto;
+    animation: spin 1.2s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
 header {
-    background-color: #d83333;
-    padding: 15px;
+    background-color: var(--primary-color);
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-    color: white;
-    font-size: 28px;
+    flex: 1;
+    text-align: center;
 }
 
-header button {
+header h1 img {
+    height: 28px;
+}
+
+#hamburger-menu {
     background: none;
     border: none;
-    color: white;
-    font-size: 32px;
+    padding: 0;
 }
 
-header nav ul {
+#hamburger-menu img {
+    width: 35px;
+    height: auto;
+}
+
+nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #c44b41;
+    padding: 20px;
     display: none;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+}
+
+nav ul li {
+    padding: 15px 0;
+    border-bottom: 2px solid #8d3a36;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #eee;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    display: block;
+    height: 500px;
+    object-fit: cover;
 }
 
-.hero-buttons {
+.bezorg-tabs {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    list-style: none;
-    margin: 0;
+    background: white;
+    overflow: hidden;
+    z-index: 5;
 }
 
-.hero-buttons button {
-    background-color: #008f39;
-    color: white;
-    border: none;
-    padding: 12px 18px;
+.bezorg-tabs .tab {
+    flex: 1;
+    padding: 14px 0;
     font-size: 18px;
-    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.bezorg-tabs .tab.active {
+    background: white;
 }
 
 .zoekbalk {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
     padding: 20px;
+    width: 85%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
     text-align: center;
+    z-index: 4;
 }
 
 .zoekbalk input {
@@ -110,145 +184,223 @@ header nav ul {
 }
 
 .zoekbalk button {
-    background-color: #008f39;
+    background-color: var(--accent-color);
     color: white;
     border: none;
     width: 100%;
     padding: 12px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.werken-bij, .zelf-ondernemen {
-    padding: 20px;
-    text-align: center;
+.werken-bij a,
+.zelf-ondernemen a {
+    display: inline-block;
+    transition: transform .2s ease-in-out;
 }
 
-.werken-bij img,
+.werken-bij a:hover,
+.zelf-ondernemen a:hover {
+    transform: scale(1.15);
+}
+
+.werken-bij, .zelf-ondernemen, .ons-assortiment {
+    padding: 40px;
+    text-align: left;
+}
+
+.werken-bij {
+    display: flex;
+    flex-direction: column;
+}
+
+.werken-bij img {
+    order: 1;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.werken-bij h2 {
+    order: 2;
+    margin-bottom: 10px;
+}
+
+.werken-bij p {
+    order: 3;
+    margin-bottom: 15px;
+}
+
+.werken-bij a {
+    order: 4;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
 .zelf-ondernemen img {
     width: 100%;
     border-radius: 6px;
     margin-bottom: 10px;
 }
 
-.werken-bij a,
 .zelf-ondernemen a {
     display: inline-block;
-    background-color: #008f39;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 16px;
     text-decoration: none;
     border-radius: 4px;
-    margin-top: 10px;
 }
 
-.ons-assortiment {
-    padding: 20px;
-    text-align: center;
+.assortiment-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
 }
 
-.ons-assortiment ul {
+.assortiment-slider {
+    display: flex;
+    gap: 2px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
 }
 
-.ons-assortiment li {
-    width: 45%;
+.assortiment-slider li {
+    min-width: 50%;
+    scroll-snap-align: center;
     text-align: center;
+    padding: 0 5px;
 }
 
-.ons-assortiment img {
+.assortiment-slider img {
     width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
-.ons-assortiment h3 {
+.assortiment-slider h3 {
+    color: var(--primary-color);
     margin: 10px 0 5px;
-    color: #d83333;
-    font-size: 22px;
 }
 
-@media (max-width: 600px) {
-    .ons-assortiment ul {
-        flex-direction: column;
-    }
-
-    .ons-assortiment li {
-        width: 100%;
-    }
+.assortiment-slider p {
+    margin-bottom: 10px;
 }
 
-.nieuws-febo {
-    padding: 20px;
+.assortiment-slider a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-.nieuws-febo ul {
-    list-style: none;
-    padding: 0;
+.febo-vroeger {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
-.nieuws-febo li {
-    margin-bottom: 30px;
+.febo-vroeger img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
 }
 
-.nieuws-febo img {
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lazy-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 4s ease, transform 4s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .lazy-card.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+article img {
+    order: 1;
     width: 100%;
     border-radius: 6px;
-}
-
-.nieuws-febo time {
-    font-size: 14px;
-    color: #777;
-}
-
-main > section img {
-    width: 100%;
+    margin-bottom: 20px;
 }
 
 article {
-    padding: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-article h2 {
-    font-size: 28px;
-    color: #c36c1d;
-    margin-top: 30px;
-}
-
-article img {
+article img:nth-of-type(3) {
     width: 100%;
-    margin: 10px 0;
-}
+    height: 500px;
+    object-fit: cover;
+  }
 
-main > div {
-    padding: 20px;
-}
 
-main > div iframe {
-    width: 100%;
+.heden img {
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 1em 0;
 }
 
-main > div img {
+.heden {
+    padding: 20px;
+    text-align: center;
+}
+
+.heden p {
+    margin-bottom: 20px;
+}
+
+.heden h2 {
+    color: #d83333;
+}
+
+
+#player {
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
 footer {
-    background-color: #d83333;
-    padding: 25px;
+    background-color: var(--primary-color);
     color: white;
+    padding: 25px;
+    text-align: left;
 }
 
 footer h2 {
     font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: bold;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 0 0 25px;
 }
 
 footer ul li {
@@ -261,57 +413,54 @@ footer a {
 }
 
 footer img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    padding: 8px;
+    width: 35px;
+    height: 35px;
 }
 
-footer button {
-    width: 100%;
-    background-color: #008f39;
-    border: none;
-    color: white;
-    padding: 14px;
-    font-size: 18px;
-    margin-top: 20px;
-    border-radius: 4px;
-}
-
-footer button + ul {
-    background-color: #008f39;
-    padding: 10px;
-}
-
-footer button + ul li a {
-    color: white;
-}
-
-.ons-assortiment ul {
-    display: flex !important;
-    justify-content: center;
-    gap: 20px;
-}
-
-.ons-assortiment li {
-    width: 45%;
+footer p {
     text-align: center;
+    margin: 10px 0;
 }
 
-.ons-assortiment ul {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between;
+footer ul:has(img) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 12px;
+    row-gap: 12px;
+    justify-content: start;
 }
 
-.ons-assortiment li {
-    width: 48%;
+#hamburger-menu.pop {
+    animation: pop 0.3s ease-out;
 }
 
-.ons-assortiment img {
-    width: 80%;
-    margin: 0 auto;
+nav ul li a {
     display: block;
+    padding: 10px 0;
+    transition: transform .2s ease;
+    transform-origin: left center;
 }
 
+nav ul li a:hover {
+    transform: scale(1.15);
+}
+
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: var(--color-background2);
+      --color-text: var(--color-text2);
+    }
+  }
+
+  @media (min-width: 35em){
+
+
+  
+  }
