@@ -5,140 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEBO</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/febo_rood.png">
 </head>
 
 <body>
 
 <header>
-        <h1>FEBO</h1>
-        <button id="hamburger-menu">☰</button>
-        <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Acties</a></li>
-                <li><a href="#">Vestigingen</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button id="hamburger-menu">
+        <img src="images/hamburger.png" alt="Open het navigatiemenu van de website">
+    </button>
 
+    <h1>
+        <a href="index.html">
+            <img src="images/febologo.png" alt="FEBO wit logo">
+        </a>
+    </h1>
 
-    <section class="hero">
-        <img src="images/Febo assets voor Mel/home fotos + logo/imgi_11_1.1-header-1500x615.jpg" alt="Febo logo van de winkel">
-        <ul class="hero-buttons">
-            <li><button>Bezorgen</button></li>
-            <li><button>Afhalen</button></li>
+    <span style="width:35px;"></span>
+
+    <nav>
+        <ul id="nav-list">
+            <li><a href="#">FEBOLINES</a></li>
+            <li><a href="#">Werken bij</a></li>
+            <li><a href="#">Franchisenemer worden</a></li>
+            <li><a href="historie.html">Ons verhaal</a></li>
+            <li><a href="#">FEBO Merch</a></li>
+            <li><a href="#">Vind een FEBO</a></li>
+            <li><a href="#">Ons assortiment</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-    </section>
+    </nav>
+</header>
 
 
-    <section class="zoekbalk">
+<section class="hero">
+    <img src="images/febo_header.jpg" alt="FEBO-logo boven de voordeuren van een FEBO-winkel">
+
+    <div class="bezorg-tabs">
+        <button class="tab active">BEZORGEN</button>
+        <button class="tab">AFHALEN</button>
+    </div>
+
+    <div class="zoekbalk">
         <label class="zoek-label">Vul hier je postcode in</label>
         <input type="text" class="zoek-input" placeholder="1234AB">
         <button class="zoek-button">Zoek</button>
-    </section>
+    </div>
+</section>
 
 
-    <section class="werken-bij">
-        <h2>Werken bij FEBO</h2>
-        <img src="images/Febo assets voor Mel/home fotos + logo/imgi_12_FEBO-Bezorgservice-56-kl-500x334.jpg" alt="Medewerker van febo buiten bij scooter">
-        <p>Kom werken bij de leukste snackbar van Nederland!</p>
-        <a href="#">Meer informatie</a>
-    </section>
+<section class="werken-bij">
+    <h2>Werken bij FEBO!</h2>
+
+    <img 
+        data-src="images/bezorger.jpg" 
+        loading="lazy"
+        alt="FEBO-bezorger poseert met helm naast zijn scooter voor een FEBO-winkel"
+        class="lazy-card"
+    >
+
+    <p>Bak jij straks die heerlijke grillburgers? FEBO is een begrip onder de snack en haute frituur liefhebbers. Daarnaast is 
+    FEBO een authentiek familiebeddrijf met een unieke dagverse productie.</p>
+    <a href="#">Meer informatie</a>
+</section>
+
+<section class="zelf-ondernemen">
+    <h2>Zelf ondernemen?</h2>
+
+    <img 
+        data-src="images/medewerkers_febo.jpg"
+        loading="lazy"
+        alt="Twee FEBO-medewerkers staan lachend naast elkaar achter de toonbank"
+        class="lazy-card"
+    >
+
+    <p>Ben jij ondernemend en zoek je houvast, structuur, extra merkkracht en ondersteuning? Start vandaag jouw FEBO avontuur.
+    FEBO bestaat al meer dan 80 jaar en heeft zich keer op keer bewezen als succesvolle formule.
+    </p>
+    <a href="#">Meer informatie</a>
+</section>
 
 
-    <section class="zelf-ondernemen">
-        <h2>Zelf ondernemen?</h2>
-        <img src="images/Febo assets voor Mel/home fotos + logo/imgi_13_IMG_1864_S-500x500.jpg" alt="Febo medewerkers">
-        <p>
-            Ben jij ondernemend en zoek je houvast, structuur, extra merkkracht en ondersteuning?
-            Start vandaag jouw FEBO avontuur. FEBO bestaat al meer dan 80 jaar
-            en heeft zich keer op keer bewezen als succesvolle formule.
-        </p>
-        <a href="#">Meer informatie</a>
-    </section>
+<section class="ons-assortiment">
+    <h2>Ons assortiment</h2>
+    <p>
+        Dagelijks worden onze kroketten en burgers nog altijd volgens het authentieke recept 
+        dagvers bereid. Continu zorgen wij ervoor dat de producten nog steeds dezelfde 
+        kwaliteit hebben als vroeger.
+    </p>
 
+    <div class="assortiment-wrapper">
+        <ul class="assortiment-slider">
 
-    <section class="ons-assortiment">
-        <h2>Ons assortiment</h2>
-        <p>
-            Dagelijks worden onze kroketten en burgers nog altijd volgens het authentieke recept dagvers bereid.  
-            Continu zorgen wij ervoor dat de producten dezelfde kwaliteit hebben als vroeger.
-        </p>
-        <ul>
             <li>
-                <img src="images/Febo assets voor Mel/home fotos + logo/imgi_4_Kroket_Rundvlees2-1024x886-1-500x433.png" alt="Kroket">
+                <img src="images/kroket.png" alt="Knapperige rundvleeskroket">
                 <h3>Kroketten</h3>
                 <p>Krokant banket van romige ragout, dagvers bereid.</p>
                 <a href="#">Product informatie</a>
             </li>
+
             <li>
-                <img src="images/Febo assets voor Mel/home fotos + logo/imgi_5_Milkshakes-bestelzuilen3-500x400.jpg" alt="Milkshake">
+                <img src="images/milkshake.jpg" alt="Aardbeienmilkshake in close up">
                 <h3>Milkshake</h3>
-                <p>Romige shake van echte melk.</p>
+                <p>Romige shake van echte melk, volgens eigen receptuur.</p>
                 <a href="#">Product informatie</a>
             </li>
+
+            <li>
+                <img src="images/kaassouffle.png" alt="Kaassoufflé snack">
+                <h3>Snacks</h3>
+                <p>Divers assortiment banket uit eigen productiekeuken en naar eigen recept.</p>
+                <a href="#">Product informatie</a>
+            </li>
+
+            <li>
+                <img src="images/grillburger.png" alt="FEBO grillburger met vlees">
+                <h3>Grillburger</h3>
+                <p>Van 100% Nederlands rund- of kippenvlees.</p>
+                <a href="#">Product informatie</a>
+            </li>
+
         </ul>
-    </section>
+    </div>
+</section>
 
 
-    <section class="nieuws-febo">
-        <h2>FEBO Interessant</h2>
-        <ul>
-            <li>
-                <img src="images/Febo assets voor Mel/home fotos + logo/imgi_16_IMG_3807-1125x1500.jpg" alt="FEBO opening met medewerker bij ingang">
-                <time datetime="2025-06-24">24 juni 2025</time>
-                <h3>FEBO Amstelveen is weer open</h3>
-                <p>Na een verbouwing sinds 21 maart is onze vernieuwde vestiging in Amstelveen klaar om jullie weer te ontvangen.</p>
-                <a href="#">Lees meer</a>
-            </li>
-            <li>
-                <img src="images/Febo assets voor Mel/home fotos + logo/imgi_17_Foto-FEBO-2-1500x650.jpg" alt="FEBO Rabobank samenwerking collegas">
-                <time datetime="2025-06-17">17 juni 2025</time>
-                <h3>FEBO kiest Rabobank als nieuwe huisbank</h3>
-                <p>Een match made in Amsterdam: FEBO kiest Rabobank als haar nieuwe financiële partner.</p>
-                <a href="#">Lees meer</a>
-            </li>
-            <li>
-                <img src="images/Febo assets voor Mel/home fotos + logo/imgi_18_TT-2-1500x999.jpg" alt="FEBO TommyTomato samenwerking">
-                <time datetime="2024-11-19">19 november 2024</time>
-                <h3>FEBO x TommyTomato</h3>
-                <p>Samen met TommyTomato lanceert FEBO groentelunches op scholen om jongeren makkelijker toegang te geven tot gezonde keuzes.</p>
-                <a href="#">Lees meer</a>
-            </li>
-        </ul>
-    </section>
+<footer>
+    <h2>Contact</h2>
+    <ul>
+        <li>Processorsstraat 21</li>
+        <li>1033 NZ Amsterdam</li>
+        <li>020-6328555</li>
+        <li><a href="mailto:info@febo.nl">info@febo.nl</a></li>
+    </ul>
 
+    <h2>Contact FEBO Merch</h2>
+    <ul>
+        <li><a href="mailto:shop@febo.nl">shop@febo.nl</a></li>
+        <li>Retourneren</li>
+    </ul>
 
-    <footer>
-        <section>
-            <h2>Contact</h2>
-            <ul>
-                <li>info@febo.nl</li>
-                <li>0800-FEBO</li>
-                <li>Klantenservice</li>
-            </ul>
-        </section>
+    <h2>Pagina's</h2>
+    <ul>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Interessant</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Ons verhaal</a></li>
+        <li><a href="#">Mijn FEBO</a></li>
+    </ul>
 
-        <section>
-            <h2>Volg ons</h2>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>TikTok</li>
-            </ul>
-        </section>
+    <h2>Social media</h2>
+    <ul>
+        <li><a href="#"><img src="/images/facebook.png" alt="Facebook logo"></a></li>
+        <li><a href="#"><img src="/images/x.png" alt="X Twitter logo"></a></li>
+        <li><a href="#"><img src="/images/instagram.png" alt="Instagram logo"></a></li>
+        <li><a href="#"><img src="/images/linkedin.png" alt="LinkedIn logo"></a></li>
+        <li><a href="#"><img src="/images/youtube.png" alt="YouTube logo"></a></li>
+        <li><a href="#"><img src="/images/tiktok.png" alt="TikTok logo"></a></li>
+    </ul>
 
-        <section>
-            <h2>Over FEBO</h2>
-            <ul>
-                <li>Over ons</li>
-                <li>Vacatures</li>
-                <li>Geschiedenis</li>
-            </ul>
-            <a href="#" class="besteldirect">Bestel direct</a>
-        </section>
-    </footer>
+    <p>Copyright © 2025 FEBO</p>
+    <p>Disclaimer</p>
+
+</footer>
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
